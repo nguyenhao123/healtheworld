@@ -14,10 +14,24 @@ Simple REST call that says from where its invoked from
 public class HealtheWorldController {
 
 
- @GetMapping("/whereami")
- public String whereami() {
+ @GetMapping("/pod")
+ public String pod() {
 
 
- return String.format("Hello from %s", System.getenv().getOrDefault("HOSTNAME", "localhost"));
+ return String.format("%s", System.getenv().getOrDefault("HOSTNAME", "localhost"));
+ }
+ 
+ @GetMapping("/db_user")
+ public String db_user() {
+
+
+ return String.format("%s", System.getenv().getOrDefault("DB_USER", "localhost"));
+ }
+ 
+ @GetMapping("/db_password")
+  public String db_user() {
+
+
+ return String.format("%s", System.getenv().getOrDefault("DB_PASSWORD", "localhost"));
  }
 }
