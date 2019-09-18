@@ -29,7 +29,7 @@ public class HealtheWorldController {
  }
  
  @GetMapping("/db_password")
-  public String db_user() {
+  public String db_password() {
 
 
  return String.format("%s", System.getenv().getOrDefault("DB_PASSWORD", "localhost"));
