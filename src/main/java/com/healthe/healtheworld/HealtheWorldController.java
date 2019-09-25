@@ -56,6 +56,6 @@ public class HealtheWorldController {
  String.format("%s", System.getenv().getOrDefault("PV_MOUNT_PATH", "letmein999")) + "\n" +
  String.format("%s", System.getenv().getOrDefault("SPLUNK_HOST", "letmein999")) + "\n" +
  String.format("%s", System.getenv().getOrDefault("SPLUNK_PORT", "letmein999")) + "\n" +
- String.format("%s", System.getenv().getOrDefault("TZ", "letmein999")) + "\n" +
+ String.format("%s", System.getenv().getOrDefault("TZ", "letmein999"));
  }
 }
